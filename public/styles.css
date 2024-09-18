@@ -1,0 +1,257 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Set a base font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    direction: rtl;
+    text-align: right;
+}
+
+/* Sticky header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    position: relative; /* Needed for absolute positioning of the logo */
+}
+
+header .logo {
+    position: absolute;
+    left: 20px; /* Position the logo to the left */
+    top: 10px;
+}
+
+header img {
+    width: 100px;
+}
+
+/* Container for the content */
+.container {
+    border: 2px solid #9a9999;
+    width: 60%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for headers */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Styling for forms */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Styling for form elements */
+select, input, button {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Time display */
+#timeDisplay {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Courier New", monospace;
+}
+
+/* Notification */
+#notification {
+    text-align: center;
+    color: #d9534f;
+    margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Button for management page */
+#manageButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#manageButton a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d3d5d8;
+    color: #37363b;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 4px #34333b;
+    font-weight: bold;
+}
+
+#manageButton a:hover {
+    background-color: #4c82bc;
+}
+
+/* Start  buttons */
+#startButton{
+    border-radius: 20px;
+    width: 30%;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#startButton {
+    background-color: #3b663b;
+}
+
+
+#startButton:hover {
+    background-color: #2a4f2a; /* Darker green for both buttons */
+    background-color: #2a4f2a; /* Darker red for both buttons */
+}
+
+/* Navigation menu styling */
+nav {
+    background-color: #444; /* צבע רקע כהה יותר */
+    padding: 15px 0; /* רווחים פנימיים גדולים יותר */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* צלליות עדינות */
+    border-radius: 5px; /* פינות מעוגלות */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* שורת תפריטים במקום אינליין */
+    margin: 0 20px; /* מרווחים גדולים יותר בין הפריטים */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* גודל טקסט גדול יותר */
+    padding: 10px 15px; /* רווחים פנימיים מסביב לטקסט */
+    display: inline-block; /* יישור טוב יותר */
+    border-radius: 5px; /* פינות מעוגלות */
+    transition: background-color 0.3s, color 0.3s; /* שינוי צבע חלק */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* צבע רקע כהה יותר בזמן ריחוף */
+    color: #ffd700; /* צבע טקסט במהלך ריחוף */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+/* CSS לכפתורי המחיקה */
+.delete-button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+/* עיצוב כפתור הפסקת טיימר */
+.stop-button {
+    border-radius: 50px; /* עיצוב כפתור בצורה של אליפסה */
+    background-color: #2a4f2a; /* ירוק כהה */
+    color: #ffffff; /* צבע טקסט לבן */
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; /* מרווחים פנימיים */
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* אנימציה לשינוי צבע ולשינוי גובה */
+}
+
+.stop-button:hover {
+    background-color: #2a4f2a; /* ירוק כהה יותר בזמן ריחוף */
+    transform: scale(1.05); /* הגדלה קלה בזמן ריחוף */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ניהול</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">טיימר</a></li>
+            <li><a href="report.html">דוח זמנים</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>הוספת עובד</h2>
+        <form id="addEmployeeForm">
+            <label for="employeeCode">קוד עובד:</label>
+            <input type="number" id="employeeCode" required>
+            <label for="employeeName">שם עובד:</label>
+            <input type="text" id="employeeName" required>
+            <button type="submit">הוסף עובד</button>
+        </form>
+        
+        
+        
+        <h2>הוספת פרויקט</h2>
+        <form id="addProjectForm">
+            <label for="projectCode">קוד פרויקט:</label>
+            <input type="number" id="projectCode" required>
+            <label for="projectName">שם פרויקט:</label>
+            <input type="text" id="projectName" required>
+            <button type="submit">הוסף פרויקט</button>
+        </form>
+        
+     
+        
+        <h2>רשימת עובדים</h2>
+        <ul id="employeeListUl"></ul>
+        
+        <h2>רשימת פרויקטים</h2>
+        <ul id="projectListUl"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

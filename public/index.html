@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טיימר פרויקט</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Management.html">ניהול</a></li>
+            <li><a href="report.html">דוח זמנים</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>טיימר לפרויקט</h2>
+        <form id="timerForm">
+            <label for="employeeSelect">בחר עובד:</label>
+            <select id="employeeSelect"></select>
+            <br>
+            <label for="projectSelect">בחר פרויקט:</label>
+            <select id="projectSelect"></select>
+            <br>
+            <button type="button" id="startButton">התחל טיימר</button>
+        </form>
+        
+
+        <h2>טיימרים פעילים</h2>
+        <ul id="activeTimers"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
